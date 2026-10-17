@@ -17,7 +17,7 @@ st.caption("Upload an apple or orange to see if the model guesses correctly!")
 @st.cache_resource
 
 def get_learner():
-    model_path = Path(__file__).parent / 'model3.pkl'
+    model_path = Path(__file__).parent / 'model.pkl'
     return load_learner(model_path)
 
 learn = get_learner()  
